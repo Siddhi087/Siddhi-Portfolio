@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Siddhi Patil | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      background: #f4f7fa;
+    }
+
+    aside {
+      width: 250px;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      position: fixed;
+      height: 100vh;
+    }
+
+    aside img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+    }
+
+    aside h1 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .social-icons a {
+      color: white;
+      background: #1e293b;
+      padding: 8px;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #2563eb;
+    }
+
+    nav {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    nav a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      margin: 5px 0;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #1e293b;
+      color: #60a5fa;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.85em;
+      text-align: center;
+      color: #aaa;
+    }
+
+    .main {
+      margin-left: 250px;
+      width: calc(100% - 250px);
+    }
+
+    .home {
+      height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .home-content {
+      position: relative;
+      color: white;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .home-content h1 {
+      font-size: 3em;
+      font-weight: 600;
+    }
+
+    .home-content p {
+      font-size: 1.5em;
+      font-weight: 300;
+      color: #cbd5e1;
+    }
+
+    section {
+      padding: 60px 40px;
+      background: white;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #1e40af;
+      margin-bottom: 20px;
+      border-left: 5px solid #2563eb;
+      padding-left: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: '•';
+      color: #2563eb;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    a {
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <aside>
+    <img src="Profil Photo.png" alt="Siddhi Patil">
+    <h1>Siddhi Patil</h1>
+   
+    <nav>
+      <a href="#home"><i class="fas fa-home"></i> Home</a>
+      <a href="#about"><i class="fas fa-user"></i> About</a>
+      <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+      <a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
+      <a href="#projects"><i class="fas fa-lightbulb"></i> Projects</a>
+      <a href="#learning"><i class="fas fa-book"></i> Learning</a>
+      <a href="#goals"><i class="fas fa-bullseye"></i> Goals</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    <footer>
+      <p>&copy; 2025 <strong>Siddhi's Portfolio</strong><br>Designed by Siddhi</p>
+    </footer>
+  </aside>
+
+  <div class="main">
+    <div class="home" id="home">
+      <div class="overlay"></div>
+      <div class="home-content">
+        <h1>Siddhi Patil</h1>
+        <p>I'm a Future Engineer | Learner | Explorer</p>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Siddhi Patil</strong>, a first-year Computer Engineering student at MIT Academy of Engineering, Alandi.</p>
+      <p>I'm passionate about technology and eager to explore different domains in the tech world. I'm currently learning Python and C programming, and I've developed an interest in cybersecurity and Linux.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>10th Grade (2021–22) – <strong>92%</strong></li>
+        <li>12th Grade (2023–24) – <strong>84%</strong></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python (Beginner)</li>
+        <li>C Programming (Beginner)</li>
+        <li>Linux Basics</li>
+        <li>Kali Linux</li>
+        <li>Problem Solving</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Cisco Python Essentials 1</li>
+        <li>Cisco Python Essentials 2</li>
+        <li>Kali Linux Course Completion Certificate</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>I haven’t worked on any projects yet, but I’m excited to start building soon! Now I am working on an AI project name as AI recipe generator. </p>
+    </section>
+
+    <section id="learning">
+      <h2>Currently Learning</h2>
+      <ul>
+        <li>Python Programming Fundamentals</li>
+        <li>Core Computer Engineering Subjects</li>
+        <li>Linux Tools</li>
+        <li>Basic Algorithms</li>
+      </ul>
+    </section>
+
+    <section id="goals">
+      <h2>Goals</h2>
+      <ul>
+        <li>Start personal projects</li>
+        <li>Improve programming skills</li>
+        <li>Explore AI & Cybersecurity</li>
+        <li>Contribute to open source</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p><strong>Email:</strong> siddhipatil35328@gmail.com</p>
+      <p><strong>Phone:</strong> +91-8605226514</p>
+      <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/siddhipatil</a></p>
+    </section>
+  </div>
+</body>
+</html>
